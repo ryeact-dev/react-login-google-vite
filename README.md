@@ -9,9 +9,9 @@ Currently, two official plugins are available:
 
 ## Demo
 
-https://react-password-generator-vite.vercel.app/
+[https://react-password-generator-vite.vercel.app/](https://react-login-google-vite.vercel.app/)
 
-## 🧞 Download or Fork the repo and use the commands below
+## Download or Fork the repo and use the commands below
 
 All commands are run from the root of the project, from a terminal:
 
@@ -20,3 +20,7 @@ All commands are run from the root of the project, from a terminal:
 | `npm install`   | Installs dependencies                        |
 | `npm run dev`   | Starts local dev server at `localhost:5173`  |
 | `npm run build` | Build your production site to `./dist/`      |
+
+## Google Cloud API for Oauth2 Tutorial
+
+https://www.youtube.com/watch?v=HtJKUQXmtok
