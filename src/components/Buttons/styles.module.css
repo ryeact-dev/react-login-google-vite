@@ -1,0 +1,59 @@
+.google_row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.google_row img {
+  width: 24px;
+  height: 24px;
+}
+
+.google_row button {
+  background-color: var(--google-background);
+  color: var(--text);
+  width: 100%;
+  min-height: 48px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+}
+
+.google_row button:hover {
+  background-color: var(--google-background-hover);
+}
+
+.form_button {
+  background-color: var(--primary);
+  color: white;
+  white-space: nowrap;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  line-height: 50px;
+  outline: none;
+  font-size: 18px;
+  letter-spacing: 0.025em;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 800;
+  min-height: 50px;
+  width: 100%;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+
+.form_button:hover {
+  background-color: var(--primary-dark);
+}

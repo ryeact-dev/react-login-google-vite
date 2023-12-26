@@ -1,0 +1,72 @@
+.input_wrapper {
+  position: relative;
+  padding: 15px 0 0;
+  margin-bottom: 0.5rem;
+}
+
+.input_field {
+  font-size: 1.5rem;
+  color: var(--text);
+  padding: 6px 0px;
+  padding-right: 32px;
+  padding-bottom: 8px;
+  line-height: 2rem;
+  height: 2rem;
+  outline: 0px;
+  border: 0px;
+  width: 100%;
+  vertical-align: middle;
+  padding-bottom: 0.7rem;
+  border-bottom: 3px solid var(--secondary);
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.input_field::placeholder {
+  color: transparent;
+}
+
+.input_label {
+  user-select: none;
+}
+
+.input_field:placeholder-shown ~ .input_label {
+  cursor: text;
+  color: var(--text);
+  top: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.input_label,
+.input_field:focus ~ .input_label {
+  position: absolute;
+  top: -0.8rem;
+  display: block;
+  font-size: 1.1rem;
+  color: var(--text);
+  transition: 0.3s;
+}
+
+.input_field:focus ~ .input_label {
+  color: var(--primary-dark);
+}
+
+.input_field:focus {
+  border-bottom: 3px solid var(--primary-dark);
+}
+
+.input_field:focus ~ svg {
+  stroke: var(--primary-dark);
+}
+
+.input_icon {
+  position: absolute;
+  right: -14px;
+  bottom: -11px;
+  width: 36px;
+  height: 36px;
+  padding: 2px;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  cursor: pointer;
+}
