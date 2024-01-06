@@ -25,7 +25,7 @@ export default function App() {
     setUser(null);
   };
 
-  const height = !isLoading && !user ? '500px' : '360px';
+  const height = !isLoading && !user ? '500px' : '400px';
 
   return (
     <form
