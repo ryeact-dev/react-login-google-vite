@@ -28,7 +28,11 @@ export default function App() {
   const height = !isLoading && !user ? '500px' : '360px';
 
   return (
-    <form className={styles.form_container} style={{ height }}>
+    <form
+      onSubmit={!user ? onSubmitHandler : onLogout}
+      className={styles.form_container}
+      style={{ height }}
+    >
       {isLoading && <span className={styles.loader}></span>}
       <div className={styles.login_header}>
         {user && (
@@ -48,12 +52,7 @@ export default function App() {
       {!isLoading && !user && (
         <Inputs setEmail={setEmail} setPassword={setPassword} />
       )}
-      <button
-        type='button'
-        onClick={!user ? onSubmitHandler : onLogout}
-        className={styles.form_button}
-        disabled={isLoading}
-      >
+      <button type='submit' className={styles.form_button} disabled={isLoading}>
         {user ? 'Logout' : isLoading ? 'Loading...' : 'Login'}
       </button>
       {!user && !isLoading && (
